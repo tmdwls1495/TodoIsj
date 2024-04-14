@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-image: url(image/휴대폰.png);
+}
+
+.container{
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+
+}
+.Title h1{
+    text-align: center;
+    width: 100%;
+    margin: 0; 
+    padding: 20px 0; 
+    font-size: 60px; ;
+    line-height: 2.0; 
+    box-sizing: border-box; 
+    letter-spacing: 6px;
+}
+.task-area{
+    border:1px solid gray;
+}
+.input-area {
+    text-align: center;
+    
+    display: flex; /* 입력 요소들을 수평으로 정렬하기 위해 Flexbox 사용 */
+    align-items: center; /* 입력 요소들을 수직으로 가운데 정렬 */
+    justify-content: center; /* 입력 요소들을 수평으로 가운데 정렬 */
+    margin-bottom: 3px;
+    position: relative;
+    padding: 3px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.task-input {
+    font-weight: 300;
+    outline-width: 80%;
+    height: 100%;
+    width: 70%     ;/* 입력란의 너비를 70%로 조정 */
+    margin-right: 50px; /* 입력란과 버튼 사이의 간격을 조정 */
+    font-size: 18px;
+}
+.task-tabs{
+    display: flex;
+    border-bottom:1px solid gray;
+    position: relative;
+}
+.task-tabs div{
+    padding:1em;
+}
+#under-line{
+    background-color: pink;
+    height: 4px !important;
+    position: absolute;
+    top: 52px;
+    left: 0px;
+    width: 430px;
+    transition: 0.5s;
+    padding: 0px;
+
+}
+
+
+.task{
+    display : flex;
+    justify-content:space-between;
+    padding: 1em;
+}
+.task-done{
+    text-decoration: line-through;
+}
+.task-tabs div{
+    cursor:pointer;
+    width : 1000px;
+    text-align: center;
+}
